@@ -1,9 +1,9 @@
 <nav class="navbar">
     <img src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
     <div class="link-wrapper">
-        <p routerLink="/" class="link"><strong>  INÍCIO</strong></p>
-        <p routerLink="/artigos" class="link"><strong>ARTIGOS</strong></p>
-        <p routerLink="/sobre" class="link"><strong>SOBRE</strong></p>
-        <p routerLink="/contato" class="link"><strong>CONTATO</strong></p>
+        <p routerLink="/" class="link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>  INÍCIO</strong></p>
+        <p (click)="scrollToId('team')" class="link"><strong>ARTIGOS</strong></p>
+        <p routerLink="/sobre" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="link"><strong>SOBRE</strong></p>
+        <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="link"><strong>CONTATO</strong></p>
     </div>
 </nav>

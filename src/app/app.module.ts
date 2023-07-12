@@ -9,6 +9,7 @@ import { LandViewComponent } from './views/land-view/land-view.component';
 import { ExpertiseBlockComponent } from './components/expertise-block/expertise-block.component';
 import { TeamComponentComponent } from './components/team-component/team-component.component';
 import { AboutViewComponent } from './views/about-view/about-view.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutViewComponent } from './views/about-view/about-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]

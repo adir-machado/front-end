@@ -7,14 +7,16 @@ import { Component } from '@angular/core';
 })
 export class LandViewComponent {
   expertises = [
-    { title: "Assessoria Jurídica à Empresa", path: "../../../assets/images/Rectangle 3.png" },
-    { title: "Cobranças e Execuções", path: "../../../assets/images/Rectangle 5.png" },
-    { title: "Direito Administrativo", path: "../../../assets/images/Rectangle 7.png" },
-    { title: "Direito Bancário", path: "../../../assets/images/Rectangle 9.png" },
-    { title: "Direito Contratual", path: "../../../assets/images/Rectangle 11.png" },
-    { title: "Direito de Família e Sucessões", path: "../../../assets/images/Rectangle 12.png" },
-    { title: "Direito do Consumidor", path: "../../../assets/images/Rectangle 13.png" },
-    { title: "Direito Previdenciário", path: "../../../assets/images/Rectangle 14.png" }
+    { title: "Direito Civil", path: "../../../assets/images/Rectangle 3.png" },
+    { title: "Direito Imobiliário", path: "../../../assets/images/Rectangle 5.png" },
+    { title: "Direito Notarial", path: "../../../assets/images/Rectangle 7.png" },
+    { title: "Direito Público", path: "../../../assets/images/Rectangle 9.png" },
   ];
-  
+  lawyers = [
+    { name: "Dr. Adir Machado Bandeira", title: "Advogado", path: "../../../assets/images/IMG_1772.png" },
+    { name: "Dra. Aridênia Moura Santos", title: "Advogada", path: "../../../assets/images/IMG_1828.png" },
+    { name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/IMG_1835.png" },
+    { name: "Dr. Rafael Santos Lima", title: "Advogado", path: "../../../assets/images/IMG_1848.png" },
+  ];
+
 }

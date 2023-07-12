@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./team-component.component.css']
 })
 export class TeamComponentComponent {
-  
+  @Input('imgPath') path = '';
+  @Input('lawyerName') name = '';
+  @Input('lawyerTitle') title = '';
 }
