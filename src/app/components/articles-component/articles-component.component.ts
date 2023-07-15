@@ -7,5 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ArticlesComponentComponent {
   @Input('articleTitle') title = '';
-  @Input('authorName') name = ''; 
+  @Input('authorName') name = '';
+  @Input('articleLink') link = '';
+
+  openLink(){
+    window.open(this.link, '_blank')?.focus()
+  }
 }

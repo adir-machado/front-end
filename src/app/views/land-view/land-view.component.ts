@@ -19,7 +19,7 @@ export class LandViewComponent {
     { name: "Dr. Rafael Santos Lima", title: "Advogado", path: "../../../assets/images/IMG_1848.png" },
   ];
   articles = [
-    { title: "O necessário overruling sobre o artigo 55 da Lei 9.099/95", author: "Adir Machado Bandeira" },
-    { title: "A advocacia e o processo de impeachment", author: "Adir Machado Bandeira" },
+    { title: "O necessário overruling sobre o artigo 55 da Lei 9.099/95", author: "Adir Machado Bandeira", link: "https://www.conjur.com.br/2023-mai-16/adir-machado-overruling-artigo-55-lei-9099952" },
+    { title: "A advocacia e o processo de impeachment", author: "Adir Machado Bandeira", link: "https://www.conjur.com.br/2021-jul-10/adir-bandeira-advocacia-processo-impeachment" },
   ];
 }

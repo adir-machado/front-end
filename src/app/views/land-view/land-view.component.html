@@ -73,7 +73,8 @@
             <h1 style="width: 425px; font-size: 40px;"><strong>Confira alguns artigos</strong></h1>
             <app-articles-component class="article" style="margin-bottom: 20px;" *ngFor="let article of articles"
             [articleTitle]="article.title"
-            [authorName]="article.author">
+            [authorName]="article.author"
+            [articleLink]="article.link">
             </app-articles-component>
         </div>
     </div>

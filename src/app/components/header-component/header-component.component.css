@@ -25,6 +25,8 @@
     transition: 0.8s;
     cursor: pointer;
     border-bottom: solid 2px #FFFFFF;
+    font-family: 'Vollkorn';
+    font-size: 18px;
 }
 
 .link:hover{
