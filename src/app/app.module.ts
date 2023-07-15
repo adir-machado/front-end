@@ -10,6 +10,7 @@ import { ExpertiseBlockComponent } from './components/expertise-block/expertise-
 import { TeamComponentComponent } from './components/team-component/team-component.component';
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { NgOptimizedImage } from '@angular/common';
+import { ArticlesComponentComponent } from './components/articles-component/articles-component.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NgOptimizedImage } from '@angular/common';
     LandViewComponent,
     ExpertiseBlockComponent,
     TeamComponentComponent,
-    AboutViewComponent
+    AboutViewComponent,
+    ArticlesComponentComponent
   ],
   imports: [
     BrowserModule,

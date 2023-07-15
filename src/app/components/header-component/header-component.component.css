@@ -34,3 +34,12 @@
 .active-link{
     color:#BF9257;
 }
+
+.logo{
+    transition: .8s;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}

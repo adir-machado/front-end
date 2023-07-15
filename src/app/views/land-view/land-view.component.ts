@@ -18,5 +18,8 @@ export class LandViewComponent {
     { name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/IMG_1835.png" },
     { name: "Dr. Rafael Santos Lima", title: "Advogado", path: "../../../assets/images/IMG_1848.png" },
   ];
-
+  articles = [
+    { title: "O necessário overruling sobre o artigo 55 da Lei 9.099/95", author: "Adir Machado Bandeira" },
+    { title: "A advocacia e o processo de impeachment", author: "Adir Machado Bandeira" },
+  ];
 }

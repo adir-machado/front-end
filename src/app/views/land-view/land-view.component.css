@@ -13,7 +13,8 @@
     color:#BF9257;
     border-radius: 10px;
     background-color: #3A161D;
-    padding: 10px 15px;
+    font-size: 20px;
+    padding: 10px 50px;
     font-family: 'Poppins-Medium';
     transition: .8s;
     width: fit-content;
@@ -43,10 +44,11 @@
 .about-button{
     all: unset;
     border: solid #3A161D;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px 50px;
     width: fit-content;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: bold;
     cursor:pointer;
     transition: .8s;
@@ -67,7 +69,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -7px;
     padding: 80px 0px;
 }
 
@@ -76,7 +77,6 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    margin-top: -7px;
     padding: 80px 0px;
 }
 
@@ -84,14 +84,38 @@
     all: unset;
     border: 2px solid #3A161D;
     border-radius: 10px;
-    padding: 5px 50px;
+    padding: 10px 50px;
     width: fit-content;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    font-weight: bold;
     cursor:pointer;
     transition: .8s;
 }
 .team-button:hover{
     background-color: #3A161D;
     color: #FFFFFF;
+}
+
+.articles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+    background-color: #FFFFFF;
+}
+.article{
+    transition: .8s;
+    cursor: pointer;
+}
+.article:hover{
+    transform: scale(1.05);
+}
+
+.expertise-block{
+    transition: .8s;
+}
+
+.expertise-block:hover{
+    transform: scale(1.05);
 }
