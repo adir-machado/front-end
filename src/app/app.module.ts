@@ -3,36 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandPageComponent } from './views/land-page/land-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
-import { FooterComponentComponent } from './components/footer-component/footer-component.component';
 import { LandViewComponent } from './views/land-view/land-view.component';
 import { ExpertiseBlockComponent } from './components/expertise-block/expertise-block.component';
 import { TeamComponentComponent } from './components/team-component/team-component.component';
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ArticlesComponentComponent } from './components/articles-component/articles-component.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandPageComponent,
-    FooterComponent
+    FooterComponent,
     HeaderComponentComponent,
-    FooterComponentComponent,
     LandViewComponent,
     ExpertiseBlockComponent,
     TeamComponentComponent,
     AboutViewComponent,
-    ArticlesComponentComponent
+    ArticlesComponentComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HttpClient
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
