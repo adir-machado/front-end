@@ -34,7 +34,7 @@ footer {
 .footer-icons {
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    width: 80px;
     padding: 10px 0px 0px 0px;
     
 }
