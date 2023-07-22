@@ -11,6 +11,7 @@ import { TeamComponentComponent } from './components/team-component/team-compone
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ArticlesComponentComponent } from './components/articles-component/articles-component.component';
+import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ArticlesComponentComponent } from './components/articles-component/arti
     ExpertiseBlockComponent,
     TeamComponentComponent,
     AboutViewComponent,
-    ArticlesComponentComponent
+    ArticlesComponentComponent,
+    ExpertiseComponentComponent
   ],
   imports: [
     BrowserModule,
