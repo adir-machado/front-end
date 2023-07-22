@@ -1,22 +1,18 @@
 @font-face {
     font-family: 'Roboto-Light';
-    src: url(./assets/fonts/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url(./assets/fonts/Roboto-Bold.ttf);
+    src: url('./assets/fonts/Roboto-Light.ttf');
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
     src: url(./assets/fonts/Roboto-Regular.ttf)
 
+    
 }
 @font-face {
     font-family: "Vollkorn";
     src: url('./assets/fonts/Vollkorn-VariableFont_wght.ttf')
 }
-
 @font-face {
     font-family: "Roboto";
     src: url('./assets/fonts/Roboto-Regular.ttf');
@@ -41,6 +37,10 @@ body{
     margin: 0;
     
 }
+.white-bg{
+    background-color: #FFFFFF;
+}
+
 body,
 html{
     width: 100%;

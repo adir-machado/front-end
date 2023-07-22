@@ -1,0 +1,84 @@
+.banner{
+    /* justify-self: flex-start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 180px 0px 80px 0px;
+    margin-top: -100px;
+}
+
+.button-banner{
+    all: unset;
+    cursor: pointer;
+    color:#F7F7F7;
+    border-radius: 10px;
+    background-color: #3A161D;
+    font-size: 20px;
+    padding: 10px 50px;
+    font-family: 'Poppins-Medium';
+    transition: .8s;
+    width: fit-content;
+}
+
+.button-banner:hover{
+    transform: scale(1.1);
+}
+
+.expertise{
+    /* justify-self: flex-start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 80px 0px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 80px 0px;
+}
+
+.team{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.team-button{
+    all: unset;
+    border: 2px solid #3A161D;
+    border-radius: 10px;
+    padding: 10px 50px;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: .8s;
+}
+.team-button:hover{
+    background-color: #3A161D;
+    color: #FFFFFF;
+}
+
+.about{
+    /* justify-self: flex-start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 80px 0px;
+}

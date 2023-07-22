@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
+
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
 import { LandViewComponent } from './views/land-view/land-view.component';
 import { ExpertiseBlockComponent } from './components/expertise-block/expertise-block.component';
@@ -14,18 +14,19 @@ import { ArticlesComponentComponent } from './components/articles-component/arti
 import { ContactComponent } from './views/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
+
     HeaderComponentComponent,
     LandViewComponent,
     ExpertiseBlockComponent,
     TeamComponentComponent,
     AboutViewComponent,
     ArticlesComponentComponent,
-    ContactComponent
+    ContactComponent,
+    ExpertiseComponentComponent
   ],
   imports: [
     BrowserModule,

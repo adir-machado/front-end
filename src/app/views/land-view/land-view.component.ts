@@ -14,7 +14,7 @@ export class LandViewComponent {
   ];
   lawyers = [
     { name: "Dr. Adir Machado Bandeira", title: "Advogado", path: "../../../assets/images/IMG_1772.png" },
-    { name: "Dra. Aridênia Moura Santos", title: "Advogada", path: "../../../assets/images/IMG_1828.png" },
+    { name: "Dra. Aridênia Moura Santos", title: "Advogada", path: "../../../assets/images/img-colab-Aridenia.jpg" },
     { name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/IMG_1835.png" },
     { name: "Dr. Rafael Santos Lima", title: "Advogado", path: "../../../assets/images/IMG_1848.png" },
   ];
