@@ -15,10 +15,11 @@ import { ContactComponent } from './views/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-
     HeaderComponentComponent,
     LandViewComponent,
     ExpertiseBlockComponent,
@@ -26,7 +27,8 @@ import { ExpertiseComponentComponent } from './components/expertise-component/ex
     AboutViewComponent,
     ArticlesComponentComponent,
     ContactComponent,
-    ExpertiseComponentComponent
+    ExpertiseComponentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
