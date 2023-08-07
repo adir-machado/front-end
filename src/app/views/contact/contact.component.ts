@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 })
 export class ContactComponent {
   constructor(private https: HttpClient) { }
-  url = 'http://127.0.0.1:5001/rs-incorporacoes/us-central1/sendEmail';
+  url = 'https://us-central1-adirmachado-a0948.cloudfunctions.net/sendEmail';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
