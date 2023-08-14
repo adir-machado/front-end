@@ -119,3 +119,21 @@
 .expertise-block:hover{
     transform: scale(1.05);
 }
+
+@media (max-width: 360px){
+    .banner{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .expertise{
+        display: none;
+    }
+    .team{
+        display: none;
+    }
+    .articles{
+        display: none;
+    }
+}

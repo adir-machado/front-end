@@ -44,3 +44,13 @@ footer {
 .second-p {
     margin-top: 3px;
 }
+
+@media (max-width: 360px){
+    .footer-border {
+        border-bottom: solid #3A161D;
+        width: 100px;
+    }
+    .footer-logo {
+        width: 150px;
+    }
+}

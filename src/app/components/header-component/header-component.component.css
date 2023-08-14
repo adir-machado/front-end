@@ -8,6 +8,9 @@
     padding: 0 20px;
     margin-top: 20px;
 }
+.hamburger{
+    display: none;
+}
 .gray-navbar{
     background-color: #F0F0F0;
     border-radius: 20px;
@@ -67,4 +70,17 @@
 
 .logo:hover{
     transform: scale(1.1);
+}
+
+@media (max-width: 360px){
+    .navbar{
+        width: 360px;
+        background-color: #3A161D;
+    }
+    .link{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
 }
