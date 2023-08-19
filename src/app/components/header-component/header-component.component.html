@@ -1,10 +1,19 @@
 <nav [class]="about.isActive ? 'gray-navbar' : 'navbar'">
-    <img routerLink="/" class="logo" src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <img routerLink="/" class="logo" src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
+        <img *ngIf="openMenu == false" style="width: 60px;" (click)="openMenu = true" class="hamburger" src="../../../assets/images/hamburger.png" alt="">
+        <img *ngIf="openMenu == true" width="60" (click)="openMenu = false" class="hamburger" src="../../../assets/images/cross.png" alt="">
+    </div>
     <div class="link-wrapper">
         <p routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>INÍCIO</strong></p>
         <p (click)="scrollToId('articles')" routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'"><strong>ARTIGOS</strong></p>
         <p routerLink="/sobre" routerLinkActive="active-link" #about="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>SOBRE</strong></p>
         <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>CONTATO</strong></p>
     </div>
-    <img class="hamburger" src="../../../assets/images/hamburger.png" alt="">
+    <div *ngIf="openMenu == true" class="menu">
+        <p routerLink="/" (click)="openMenu = false" class="mobile-link"><strong>INÍCIO</strong></p>
+        <p (click)="scrollToId('articles')" (click)="openMenu = false" routerLink="/" class="mobile-link"><strong>ARTIGOS</strong></p>
+        <p routerLink="/sobre" (click)="openMenu = false" class="mobile-link"><strong>SOBRE</strong></p>
+        <p routerLink="/contato" (click)="openMenu = false" class="mobile-link"><strong>CONTATO</strong></p>
+    </div>
 </nav>
