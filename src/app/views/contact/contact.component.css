@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 100px 0px;
-    height: 400px;
+    
     
 }
 
@@ -19,6 +19,7 @@
     color: #CBC7BA;
     padding: 20px;
     width: 300px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -88,4 +89,6 @@ button {
 
 .success-icon {
     background-color: #3A161D;
+}
+@media (min-width: 723px) {
 }
