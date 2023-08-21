@@ -1,0 +1,53 @@
+<section class="container">
+    <div class="contact-container">
+        <h1 style="margin-bottom: 0px;">Entre em contato</h1>
+        <h5 style="margin-top: 0px;">De forma presencial ou online, da maneira <br>que preferir.</h5>
+
+        <div class="contact-info">
+            <img src="../../../assets/images/location_icon.svg">
+            <p>
+                <strong>Endereço</strong>
+                <br>Rua Terêncio Sampaio, nº 138A, Grageru
+            </p>
+        </div>
+        <div class="contact-info">
+            <img src="../../../assets/images/email_icon.svg">
+            <p>
+                <strong>Email</strong>
+                <br>adir@adirmachadoadvogados.com.br
+            </p>
+        </div>
+        <div class="contact-info">
+            <img src="../../../assets/images/phone_icons.svg">
+            <p>(79) 3085-8550</p>
+        </div>
+    </div>
+
+    <form class="container-forms" (ngSubmit)="sendEmail()">
+        <h1>Mande uma mensagem</h1>
+        <div class="contact-forms" style="margin-bottom: 20px;">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome..." required [(ngModel)]="contact.name">
+        </div>
+      
+        <div class="contact-forms" style="margin-bottom: 20px;">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required [(ngModel)]="contact.email">
+        </div>
+      
+        <div class="contact-forms" style="margin-bottom: 20px;">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Digite sua mensagem" required [(ngModel)]="contact.message"></textarea>
+        </div>
+        <button type="submit" >enviar</button> 
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/adirmachadob/">
+                <img src="../../../assets/images/instagram_contact.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/adir-machado-b29141150/">
+                <img src="../../../assets/images/likedin_contact.svg">
+            </a>
+        </div>
+      </form>
+</section>
+
