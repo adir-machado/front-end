@@ -1,9 +1,10 @@
 <div style="display: flex; justify-content: space-between; width: 100%;" (click)="openLink()">
-    <div style="background-color: #F4F4F4; height: 150px; width: 150px; padding: 10px; border-radius: 10px; box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: center; margin-right: 20px;">
-        <img src="../../../assets/images/CJ_logo.png" alt="Logo do site Consultor Jurídico">
+    <div class="logo-wrapper">
+        <img class="logo" src="../../../assets/images/CJ_logo.png" alt="Logo do site Consultor Jurídico">
     </div>
+    <img class="mobile-logo" src="../../../assets/images/CJ_logo.png" alt="Logo do site Consultor Jurídico">
     <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
-        <h1 style="margin: 0; font-family: 'Vollkorn'; font-weight: bold; font-size: 25px;">{{ title }}</h1>
-        <p style="margin: 0; font-family: 'Vollkorn'; font-weight: bold; font-size: 20px; color: #BF9257;">Por {{ name }}</p>
+        <h1 class="title">{{ title }}</h1>
+        <p class="name">Por {{ name }}</p>
     </div>
 </div>
