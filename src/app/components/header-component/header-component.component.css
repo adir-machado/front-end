@@ -8,6 +8,13 @@
     padding: 0 20px;
     margin-top: 20px;
 }
+.hamburger{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
 .gray-navbar{
     background-color: #F0F0F0;
     border-radius: 20px;
@@ -36,7 +43,7 @@
     cursor: pointer;
     border-bottom: solid 2px #FFFFFF;
     font-family: 'Vollkorn';
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .link:hover{
@@ -49,7 +56,7 @@
     cursor: pointer;
     border-bottom: solid 2px #F0F0F0;
     font-family: 'Vollkorn';
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .gray-link:hover{
@@ -67,4 +74,45 @@
 
 .logo:hover{
     transform: scale(1.1);
+}
+
+@media (max-width: 430px){
+    .navbar{
+        background-color: #3A161D;
+        padding: 20px 20px 0px 20px;
+        margin: 0;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+        transition: .8s;
+    }
+
+    .gray-navbar{
+        background-color: #3A161D;
+        padding: 20px 20px 0px 20px;
+        margin: 0;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .link-wrapper{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+    .mobile-link{
+        color: #BF9257;
+        font-family: 'Vollkorn';
+        font-size: 18px;
+        margin: 0;
+    }
 }

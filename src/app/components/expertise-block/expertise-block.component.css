@@ -4,3 +4,17 @@
     font-family: 'Vollkorn';
     text-align: center;
 }
+
+.width{
+    width: 280px;
+}
+
+@media (max-width: 430px){
+    .width{
+        width: 150px;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+}
