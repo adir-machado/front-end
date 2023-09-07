@@ -1,5 +1,5 @@
 footer {
-    
+    position: relative;
     bottom: 0;
     background-color: #D9D9D9;
     width: 100%;
@@ -8,12 +8,13 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
 .footer-logo {
-    
     width: 280px;
     height: fit-content;
     cursor: pointer;
 }
+
 .footer-text {
     color: #7A7A7A;
     text-decoration: none;
@@ -36,7 +37,7 @@ footer {
     justify-content: space-between;
     width: 80px;
     padding: 10px 0px 0px 0px;
-    
+    cursor: pointer; 
 }
 
 .first-p {
@@ -45,4 +46,20 @@ footer {
 
 .second-p {
     margin-top: 3px;
+}
+
+@media (max-width: 720px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 485px;
+        flex-direction: column-reverse;
+    }
+    .footer-logo, .footer-block {
+        height: 50%;
+    }
+    .footer-logo {
+        width: 224px;
+    }
+    
 }
