@@ -49,7 +49,7 @@ footer {
     margin-top: 3px;
 }
 
-@media (max-width: 430px){
+@media (max-width: 501px){
 
     footer{
         display: none;

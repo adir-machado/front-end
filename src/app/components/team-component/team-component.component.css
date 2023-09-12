@@ -12,3 +12,13 @@
     font-family: 'Vollkorn';
     text-align: center;
 }
+
+.lawyerPic{
+    border-radius: 15px 15px 0px 0px;
+    width: 280px;
+    transition: 1s
+}
+
+.lawyerPic:hover{
+    filter: grayscale(1);
+}
