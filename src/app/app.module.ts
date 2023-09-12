@@ -18,7 +18,7 @@ import { ArticlesComponentComponent } from './components/articles-component/arti
   declarations: [
     AppComponent,
     LandPageComponent,
-    FooterComponent
+    FooterComponent,
     HeaderComponentComponent,
     FooterComponentComponent,
     LandViewComponent,
