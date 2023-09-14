@@ -1,9 +1,23 @@
-<nav class="navbar">
-    <img routerLink="/" class="logo" src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
+<nav [class]="about.isActive ? 'gray-navbar' : 'navbar'">
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <img routerLink="/" class="logo" src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
+        <img *ngIf="openMenu == false" style="width: 60px;" (click)="openMenu = true" class="hamburger" src="../../../assets/images/hamburger.png" alt="">
+        <img *ngIf="openMenu == true" width="60" (click)="openMenu = false" class="hamburger" src="../../../assets/images/cross.png" alt="">
+    </div>
     <div class="link-wrapper">
-        <p routerLink="/" class="link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>INÍCIO</strong></p>
-        <p (click)="scrollToId('articles')" class="link"><strong>ARTIGOS</strong></p>
-        <p routerLink="/sobre" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="link"><strong>SOBRE</strong></p>
-        <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="link"><strong>CONTATO</strong></p>
+        <p routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>INÍCIO</strong></p>
+        <p (click)="scrollToId('articles')" routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'"><strong>ARTIGOS</strong></p>
+        <p routerLink="/sobre" routerLinkActive="active-link" #about="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>SOBRE</strong></p>
+        <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>CONTATO</strong></p>
+    </div>
+    <div *ngIf="openMenu == true" class="menu">
+        <div style="border-bottom: 3px; border: solid #BF9257; margin-top: -3px; margin-bottom: 10px;width: 30%; border-radius: 5px;"></div>
+        <p routerLink="/" (click)="openMenu = false" class="mobile-link"><strong>INÍCIO</strong></p>
+        <img style="margin-top: -5px;" src="../../../assets/images/circle.svg" alt="">
+        <p (click)="scrollToId('articles')" (click)="openMenu = false" routerLink="/" class="mobile-link"><strong>ARTIGOS</strong></p>
+        <img style="margin-top: -5px;" src="../../../assets/images/circle.svg" alt="">
+        <p routerLink="/sobre" (click)="openMenu = false" class="mobile-link"><strong>SOBRE</strong></p>
+        <img style="margin-top: -5px;" src="../../../assets/images/circle.svg" alt="">
+        <p style="margin-bottom: 10px;" routerLink="/contato" (click)="openMenu = false" class="mobile-link"><strong>CONTATO</strong></p>
     </div>
 </nav>

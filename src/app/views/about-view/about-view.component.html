@@ -1,1 +1,124 @@
-<p>about-view works!</p>
+<section class="banner">
+    <div style="width: 80%; display: flex; justify-content: space-between;">
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 20px;">
+            <h1 style="font-size: 60px; margin: 0; width: 845px;"><strong>Sobre Nós</strong></h1>
+            <p style="font-family:'Roboto'; color: black; font-size: 18px; text-align: justify; width: 500px; margin-bottom: 80px;">O Adir Machado Advogados e Associados é um escritório de advocacia respeitado no Brasil, oferecendo serviços jurídicos de alta qualidade em diversas áreas de prática. Com uma equipe experiente e comprometida, eles fornecem soluções legais personalizadas para atender às necessidades de seus clientes.</p>
+            <button routerLink="/contato" class="button-banner">
+                ENTRAR EM CONTATO
+            </button>
+        </div>
+        <img style="z-index: 2; border-radius: 15px ; width: 40%;" src="../../../assets/images/IMG_1866.png" alt="Foto do escritório">
+    </div>
+</section>
+<section class="about">
+    <div style="width: 80%; display: flex; justify-content: center;">
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 20px;">
+            <div>
+                <h1 style="font-size: 40px;">
+                    Missão
+                </h1>
+                <p style="font-size: 18px; text-align: justify; font-family: 'Roboto'; text-indent: 50px;">
+                    A missão do escritório do Adir Machado advogados associados é fornecer serviços jurídicos de excelência, comprometidos com a defesa dos direitos e interesses dos clientes. O escritório tem como objetivo principal oferecer soluções jurídicas eficazes e estratégicas, adaptadas às necessidades específicas de cada cliente.<br>Através de uma abordagem ética, profissional e comprometida, o escritório busca garantir a máxima satisfação dos clientes, estabelecendo relações de confiança e confidencialidade. A equipe do escritório está empenhada em compreender plenamente as questões legais enfrentadas pelos clientes e em fornecer aconselhamento jurídico especializado, orientando-os de forma clara e precisa.
+                </p>
+            </div>
+            <div>
+                <h1 style="font-size: 40px;">
+                    Visão
+                </h1>
+                <p style="font-size: 18px; text-align: justify; font-family: 'Roboto'; text-indent: 50px;">
+                    A visão do escritório Adir Machado advogados associados é ser reconhecido como referência de excelência e inovação na prestação de serviços jurídicos. O escritório aspira a se destacar no mercado jurídico, sendo reconhecido pela qualidade e eficiência dos seus serviços, além do compromisso com a satisfação dos clientes.<br>Através de uma abordagem proativa e orientada para resultados, o escritório busca constantemente superar as expectativas dos clientes, oferecendo soluções jurídicas criativas e eficazes. Além disso, o escritório busca estar sempre atualizado com as mudanças e avanços do campo jurídico, utilizando tecnologia e metodologias inovadoras para otimizar seus processos e garantir uma prestação de serviços ágil e eficiente.<br>A visão do escritório é também estabelecer relações duradouras com os clientes, baseadas na confiança e na transparência. Busca-se não apenas atender às necessidades legais dos clientes, mas também compreender e apoiar seus objetivos de longo prazo, fornecendo um serviço personalizado e atencioso.
+                </p>
+            </div>
+            <div>
+                <h1 style="font-size: 40px;">
+                    Valores
+                </h1>
+                <p style="font-size: 18px; text-align: justify; font-family: 'Roboto'; text-indent: 50px;">
+                    Os valores do escritório Adir Machado advogados associados são fundamentais para guiar todas as atividades e interações do escritório. Esses valores incluem:
+                </p>
+                    <ol style="font-size: 18px; font-family: 'Roboto'; text-align: justify;">
+                        <li>Ética: O escritório preza pela conduta ética em todas as suas práticas, respeitando os princípios legais e agindo de forma íntegra e transparente.</li>
+                        <li>Excelência: O escritório busca constantemente a excelência em seus serviços, dedicando-se a fornecer soluções jurídicas de alta qualidade e exceder as expectativas dos clientes.</li>
+                        <li>Comprometimento: O escritório está comprometido em defender os interesses dos clientes de maneira incansável, dedicando tempo e esforço para alcançar os melhores resultados possíveis.</li>
+                        <li>Respeito: O escritório valoriza o respeito mútuo em todas as interações, tratando os clientes, colegas e membros da comunidade com cortesia, empatia e consideração.</li>
+                        <li>Responsabilidade: O escritório assume a responsabilidade de suas ações e decisões, buscando sempre agir de forma responsável e com diligência na representação dos clientes.</li>
+                        <li>Colaboração: O escritório incentiva uma cultura de colaboração e trabalho em equipe, reconhecendo que a troca de ideias e conhecimentos contribui para a melhoria dos resultados e do ambiente de trabalho.</li>
+                        <li>Confidencialidade: O escritório considera a confidencialidade como um pilar essencial de seu trabalho, garantindo a segurança e a privacidade das informações compartilhadas pelos clientes.</li>
+                        <li>Justiça: O escritório tem o compromisso de buscar a justiça em todas as suas ações, defendendo os direitos e interesses dos clientes e contribuindo para um sistema jurídico mais equitativo. Esses valores são essenciais para o escritório Adir Machado advogados associados, orientando todas as atividades e refletindo o compromisso com a ética, a excelência e a defesa dos interesses dos clientes.</li>
+                    </ol>
+            </div>
+        </div>
+    </div>    
+</section>
+<section class="expertise">
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 20px;">
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <h1 style="font-size: 40px;"><strong>Nossas áreas de atuação</strong></h1>
+            </div>
+            <app-expertise-component *ngFor="let expertise of expertises" style="margin-bottom: 20px;"
+            [expertiseTitle]="expertise.title"
+            [imgPath]="expertise.path"
+            [expertiseDesc]="expertise.desc">
+
+            </app-expertise-component>
+        </div>
+    </div>
+</section>
+<section class="location">
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <h1 style="font-size: 40px;"><strong>Nossa localização</strong></h1>
+        <div style="display: flex; justify-content: center; margin-left: 20px;">
+            <img src="../../../assets/images/map.png" alt="">
+            <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 60px;">
+                <div style="display: flex; width: 500px; align-items: center; margin-bottom: 40px;">
+                    <img style="width: 50px; height: 50px; margin-right: 10px;" src="../../../assets/images/location-icon.png" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 30px; margin: 0;">
+                            Endereço
+                        </h1>
+                        <p style="margin: 0;">Rua Terêncio Sampaio, nº 138A, Grageru</p>
+                    </div>
+                </div>
+                <div style="display: flex; width: 500px; align-items: center; margin-bottom: 40px;">
+                    <img style="width: 50px; height: 50px; margin-right: 10px;" src="../../../assets/images/email-icon.png" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 30px; margin: 0;">
+                            Email
+                        </h1>
+                        <a href="mailto:adir@adirmachadoadvogados.com.br" target="_self" style="margin: 0;">adir@adirmachadoadvogados.com.br</a>
+                    </div>
+                </div>
+                <div style="display: flex; width: 500px; align-items: center; margin-bottom: 40px;">
+                    <img style="width: 50px; height: 50px; margin-right: 10px;" src="../../../assets/images/phone-icon.png" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 30px; margin: 0;">
+                            Telefone
+                        </h1>
+                        <p style="margin: 0; font-size: 20px;">(79) 3085-8550</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team" class="team">
+    <div style="width: 80%; display: flex; justify-content: space-between;">
+        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; margin-left: 20px;">
+            <h1 style="width: 315px; font-size: 40px;"><strong>Nossa equipe</strong></h1>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+                <app-team-component class="team-block" style="margin-bottom: 20px;" *ngFor="let lawyer of lawyers" 
+                [lawyerName]="lawyer.name"
+                [lawyerTitle]="lawyer.title"
+                [imgPath]="lawyer.path"
+                >
+                </app-team-component>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <button routerLink="/sobre" class="team-button">
+                    VER MAIS DETALHES
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -4,3 +4,41 @@
     font-family: 'Vollkorn';
     text-align: center;
 }
+
+.width{
+    width: 280px;
+}
+
+@media (max-width: 501px){
+    .width{
+        width: 180px;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 486px){
+    .width{
+        width: 170px;
+    }
+}
+
+@media (max-width: 466px){
+    .width{
+        width: 160px;
+    }
+}
+
+@media (max-width: 440px){
+    .width{
+        width: 150px;
+    }
+}
+
+@media (max-width: 380px){
+    .width{
+        width: 140px;
+    }
+}

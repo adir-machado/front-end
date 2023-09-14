@@ -1,3 +1,13 @@
+.section-fixer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-banner{
+    display: none;
+}
+
 .banner{
     /* justify-self: flex-start; */
     margin-top: 80px;
@@ -7,13 +17,34 @@
     width: 100%;
     height: fit-content;
 }
+
+.banner-text{
+    width: 600px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.banner-fixer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.banner-title{
+    font-size: 33px;
+    margin: 0;
+    width: 705px;
+}
+
 .button-banner{
     all: unset;
     cursor: pointer;
     color:#BF9257;
     border-radius: 10px;
     background-color: #3A161D;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px 50px;
     font-family: 'Poppins-Medium';
     transition: .8s;
@@ -23,14 +54,25 @@
 .button-banner:hover{
     transform: scale(1.1);
 }
+
+.banner-img{
+    width: 470px;
+}
+
 .img-bg{
     background-color: #3A161D;
     border-radius: 100px 100px 0px 0px;
-    width: 200px;
-    height: 370px;
-    margin: 54px 0px 0px 98px;
+    width: 160px;
+    height: 342px;
+    margin: 114px 0px 0px 70px;
     position: absolute;
     z-index: 1;
+}
+
+.expertise-fixer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about{
@@ -48,7 +90,7 @@
     padding: 10px 50px;
     width: fit-content;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     cursor:pointer;
     transition: .8s;
@@ -63,6 +105,10 @@
     max-height: 480px;
     position: absolute;
 
+}
+
+.mobile-about{
+    display: none;
 }
 
 .expertise{
@@ -87,7 +133,7 @@
     padding: 10px 50px;
     width: fit-content;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     cursor:pointer;
     transition: .8s;
@@ -112,10 +158,142 @@
     transform: scale(1.05);
 }
 
+.image-portrait{
+    width: 592.312px;
+    height: 346.638px;
+    background-color: #3A161D;
+    margin: -15px 0px 0px 15px;
+}
+
 .expertise-block{
     transition: .8s;
 }
 
 .expertise-block:hover{
     transform: scale(1.05);
+}
+
+.expertise-title{
+    width: 315px;
+    font-size: 40px;
+}
+
+.margin{
+    margin-left: 30px;
+}
+
+.m-about-image{
+    z-index: 2; width: 400px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    margin-left: -100px
+}
+
+@media (max-width: 501px){
+    .banner-img{
+        display: none;
+    }
+
+    .mobile-banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+
+    .expertise-fixer{
+        width: 80%;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .banner-text{
+        width: 90%;
+        text-align: justify;
+        font-size: 16px;
+        font-family: 'Roboto';
+    }
+
+    .banner-mobile-img{
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-image: url(../../../assets/images/banner-mobile.png);
+        background-size:cover;
+        background-position: center;
+        border-radius: 0px 0px 25px 25px;
+        margin-top: -20px;
+        z-index: -1;
+    }
+
+    .banner-title{
+        display: none;
+    }
+
+    .about{
+        display: none;
+    }
+
+    .about-button{
+        margin-bottom: 40px;
+    }
+
+    .mobile-about{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+        flex-direction: column;
+    }
+
+    .expertise{
+        margin-left: -10px;
+    }
+
+    .article-img{
+        display: none;
+    }
+
+    .articles{
+        border-top: #3A161D solid 5px;
+    }
+
+    .expertise-block:hover{
+        transform: none;
+    }
+
+    .expertise-title{
+        font-size: 30px;
+    }
+
+    .article{
+        border-bottom: solid 5px #3A161D;
+    }
+
+    .article-title{
+        width: 315px;
+        font-size: 28px;
+    }
+
+    .margin{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:421px){
+    .m-about-image{
+        width: 350px;
+    }
+}
+
+@media (max-width: 380px){
+    .expertise-fixer{
+        width: 90%;
+    }
 }
