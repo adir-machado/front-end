@@ -1,14 +1,14 @@
 .container {
     display: flex;
     justify-content: center;
-    margin: 10% 0px;
+    margin: 5% 0px;
 }
 
 .contact-info {
     display: flex;
     color: #CBC7BA;
     margin-left: 0px;
-    
+    margin-top: 19px;
 
 }
 
@@ -34,8 +34,9 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 449px;
+    width: 465px;
     border-radius: 0px 19px 19px 0px;
+    height: 443px;
 
 }
 
@@ -52,7 +53,7 @@ textarea {
 }
 
 .contact-forms {
-    margin-bottom: 20px;
+    margin-bottom: 37px;
     display: flex;
     flex-direction: column;
 
