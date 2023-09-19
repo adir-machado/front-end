@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AreasActivityComponent } from './views/areas-activity/areas-activity.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ArticlesComponentComponent,
     ContactComponent,
     ExpertiseComponentComponent,
-    FooterComponent
+    FooterComponent,
+    AreasActivityComponent
   ],
   imports: [
     BrowserModule,
