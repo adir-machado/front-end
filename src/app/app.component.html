@@ -1,9 +1,12 @@
+<div class="modal-bg" *ngIf="false" (closeEvent)="modalHandle(false)">
+  <app-team-modal></app-team-modal>
+</div>
 <header class="header-wrapper">
   <app-header-component class="header"></app-header-component>
 </header>
 <div class="body">
   <img (click)="scrollToTop()" [class]="windowScrolled ? 'show-scrollTop' : 'to-top'" src="../assets/images/uparrow.png">
-  <router-outlet></router-outlet>
+  <router-outlet (openModal)="modalHandle(true)"></router-outlet>
 </div>
 <footer>
   <app-footer-component></app-footer-component>

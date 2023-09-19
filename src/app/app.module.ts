@@ -12,6 +12,8 @@ import { AboutViewComponent } from './views/about-view/about-view.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ArticlesComponentComponent } from './components/articles-component/articles-component.component';
 import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
+import { TeamModalComponent } from './components/team-modal/team-modal.component';
+import { TeamComponentModalComponent } from './components/team-component-modal/team-component-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ExpertiseComponentComponent } from './components/expertise-component/ex
     TeamComponentComponent,
     AboutViewComponent,
     ArticlesComponentComponent,
-    ExpertiseComponentComponent
+    ExpertiseComponentComponent,
+    TeamModalComponent,
+    TeamComponentModalComponent
   ],
   imports: [
     BrowserModule,

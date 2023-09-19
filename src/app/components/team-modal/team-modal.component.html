@@ -1,0 +1,15 @@
+<div class="lawyer-desc">
+    <app-team-component-modal
+    [imgPath]="'../../../assets/images/IMG_1772.png'"
+    [lawyerName]="this.name"
+    [lawyerTitle]="'Advogado'"
+    ></app-team-component-modal>
+    <div style="margin-left: 40px;">
+        <p class="lawyer-name"> <strong>{{ name }}</strong></p>
+        <p class="desc code"> {{ oab }}</p>
+        <div style="overflow-y: scroll; height: 500px;">
+            <p class="desc"> {{ desc }} </p>
+        </div>
+    </div>
+    <img class="close" src="../../../assets/images/red_cross.png" (click)="this.closeEvent.emit()">
+</div>
