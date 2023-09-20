@@ -18,6 +18,18 @@
     height: fit-content;
 }
 
+.about-subtitle{
+    width: 400px;
+    margin-top: -5px;
+    font-size: 40px;
+}
+
+.about-title{
+    color: #925555;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
 .banner-text{
     max-width: 600px;
     width: 80%;
