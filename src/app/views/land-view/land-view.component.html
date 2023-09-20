@@ -49,9 +49,13 @@
     </div>
 </section>
 <section class="expertise">
-    <div class="expertise-fixer">
-        <div class="div-margin" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
-            <h1 class="expertise-title"><strong>Áreas de atuação</strong></h1>
+    <div style="width: 80%; display: flex; justify-content: space-between;">
+        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; margin-left: 20px;">
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <h1 class="expertise-title"><strong>Áreas de atuação</strong></h1>
+                <p routerLink="/araeas-atuacao" class="expertise-p">ver todos</p>
+            </div>
+            
             <div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;">
                 <app-expertise-block class="expertise-block" style="margin-bottom: 20px; margin-right: 0px;" *ngFor="let expertise of expertises" 
                 [expertiseTitle]="expertise.title"

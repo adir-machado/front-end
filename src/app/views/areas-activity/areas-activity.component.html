@@ -1,0 +1,11 @@
+<section class="areas-of-expertise" >
+    <h1 class="expertise-h1">Áreas de atuação</h1>
+    <div *ngFor="let expertise of expertises" class="expertise-item">
+        
+        <img src="{{expertise.path}}" class="expertise-image">
+        <div>
+            <h1 class="expertise-title">{{expertise.title}}</h1>
+            <p class="expertise-text">{{expertise.text}}</p>
+        </div>
+    </div>
+</section>
