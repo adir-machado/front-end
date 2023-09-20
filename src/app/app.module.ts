@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ExpertiseComponentComponent } from './components/expertise-component/expertise-component.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AreasActivityComponent } from './views/areas-activity/areas-activity.component';
 import { TeamModalComponent } from './components/team-modal/team-modal.component';
 import { TeamComponentModalComponent } from './components/team-component-modal/team-component-modal.component';
 
@@ -30,6 +31,8 @@ import { TeamComponentModalComponent } from './components/team-component-modal/t
     ArticlesComponentComponent,
     ContactComponent,
     ExpertiseComponentComponent,
+    FooterComponent,
+    AreasActivityComponent,
     FooterComponent,
     TeamModalComponent,
     TeamComponentModalComponent,

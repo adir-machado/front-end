@@ -192,10 +192,25 @@
 .expertise-title{
     width: 315px;
     font-size: 40px;
+    width: 340px;
 }
 
 .margin{
     margin-left: 30px;
+}
+
+.expertise-p {
+    float: right;
+    font-size: 19px;
+    font-family: Vollkorn;
+    cursor: pointer;
+}
+
+.expertise-p {
+    float: right;
+    font-size: 19px;
+    font-family: Vollkorn;
+    cursor: pointer;
 }
 
 .m-about-image{
@@ -383,6 +398,12 @@
 
     .div-margin{
         margin-left: 0px;
+    }
+}
+
+@media (max-width: 1046px) {
+    .expertise-p {
+        display: none;
     }
 }
 
