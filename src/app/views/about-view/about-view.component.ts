@@ -12,9 +12,8 @@ export class AboutViewComponent {
     { title: "Defesa de Servidores Públicos", path: "../../../assets/images/Group 30.png", desc: "O escritório do advogado Adir Machado Bandeira tem um compromisso sólido e dedicado com a defesa dos direitos dos policiais civis. Reconhecendo a importância vital desses profissionais para a segurança e a ordem pública, o escritório oferece serviços advocatícios especializados para garantir que seus direitos sejam protegidos e que recebam a representação jurídica que merecem." }
   ];
   lawyers = [
-    { name: "Dr. Adir Machado Bandeira", title: "Advogado", path: "../../../assets/images/IMG_1772.png" },
-    { name: "Dra. Aridênia Moura Santos", title: "Advogada", path: "../../../assets/images/img-colab-Aridenia.jpg" },
-    { name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/IMG_1835.png" },
-    { name: "Dr. Rafael Santos Lima", title: "Advogado", path: "../../../assets/images/IMG_1848.png" },
+    { id: '0', name: "Dr. Adir Machado Bandeira", title: "Advogado", path: "../../../assets/images/img_9773.jpg" },
+    { id: '1', name: "Dra. Aridênia Moura Santos", title: "Advogada", path: "../../../assets/images/img_9973.jpg" },
+    { id: '2', name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/img_9813.jpg" },
   ];
 }

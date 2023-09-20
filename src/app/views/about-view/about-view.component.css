@@ -16,7 +16,7 @@
     color: #F7F7F7;
     border-radius: 10px;
     background-color: #3A161D;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 50px;
     font-family: 'Poppins-Medium';
     transition: .8s;
@@ -53,6 +53,12 @@
     display: flex;
     justify-content: center;
     padding: 80px 0px;
+}
+
+.team-fixer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .team-button {
@@ -99,7 +105,7 @@
 .banner-title {
     font-size: 60px;
     margin: 0;
-    width: 845px;
+    width: 615px;
 }
 
 .banner-text {
@@ -111,12 +117,11 @@
     margin-bottom: 80px;
 }
 
-
-
 .banner-image {
     z-index: 2;
     border-radius: 15px;
-    width: 40%;
+    width: 50%;
+    max-width: 600px;
 }
 /* location */
 .location-container {
@@ -128,7 +133,7 @@
 
 .location-title {
     font-size: 40px;
-}
+} 
 
 .location-info {
     display: flex;
