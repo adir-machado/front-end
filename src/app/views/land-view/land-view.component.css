@@ -19,7 +19,8 @@
 }
 
 .banner-text{
-    width: 600px;
+    max-width: 600px;
+    width: 80%;
     text-align: justify;
     font-size: 16px;
     font-family: 'Roboto';
@@ -59,6 +60,12 @@
     width: 470px;
 }
 
+.img-banner{
+    width:330px;
+    z-index: 2;
+    position: relative;
+}
+
 .img-bg{
     background-color: #3A161D;
     border-radius: 100px 100px 0px 0px;
@@ -67,6 +74,12 @@
     margin: 114px 0px 0px 70px;
     position: absolute;
     z-index: 1;
+}
+
+.expertise-fixer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about{
@@ -137,6 +150,15 @@
     color: #FFFFFF;
 }
 
+.div-margin{
+    margin-left: 20px;
+}
+
+.team-title{
+    max-width: 315px;
+    font-size: 40px;
+}
+
 .articles{
     width: 100%;
     display: flex;
@@ -153,7 +175,7 @@
 }
 
 .image-portrait{
-    width: 592.312px;
+    width: 519.950px;
     height: 346.638px;
     background-color: #3A161D;
     margin: -15px 0px 0px 15px;
@@ -176,8 +198,39 @@
     margin-left: 30px;
 }
 
-@media (max-width: 430px){
+.m-about-image{
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    margin-left: -50px
+}
+
+.about-img{
+    margin-left: 100px;
+    display: flex;
+}
+
+.m-about-title{
+    width: 400px;
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+@media (max-width: 1024px){
+
+    .about{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
     .banner-img{
+        display: none;
+    }
+
+    .banner{
         display: none;
     }
 
@@ -188,6 +241,70 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 80px;
+    }
+
+    .banner-mobile-img{
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-image: url(../../../assets/images/banner-mobile.png);
+        background-size:cover;
+        background-position: center;
+        border-radius: 0px 0px 25px 25px;
+        margin-top: -20px;
+        z-index: -1;
+    }
+
+    .about{
+        display: none;
+    }
+
+    .about-button{
+        margin-bottom: 40px;
+    }
+
+    .mobile-about{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+        flex-direction: column;
+    }
+}
+
+.team-fixer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 5px){
+    .banner-img{
+        display: none;
+    }
+
+    .team-fixer{
+        width: 75%;
+    }
+
+    .m-about-image{
+        width: 400px;
+        margin-left: -100px;
+    }
+
+    .mobile-banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+
+    .expertise-fixer{
+        width: 80%;
     }
 
     .banner{
@@ -260,11 +377,53 @@
     }
 
     .article-title{
-        width: 315px;
+        max-width: 315px;
         font-size: 28px;
     }
 
-    .margin{
+    .div-margin{
         margin-left: 0px;
     }
+}
+
+@media (max-width:421px){
+    .m-about-image{
+        width: 350px;
+    }
+}
+
+@media (max-width: 380px){
+    .expertise-fixer{
+        width: 90%;
+    }
+
+    .m-about-image{
+        width: 300px;
+    }
+    
+    .m-about-title{
+        max-width: 80%;
+        font-size: 26px;
+    }
+
+    .team-title{
+        font-size: 30px;
+    }
+
+    .div-margin{
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 321px){
+    
+    .team-fixer{
+        margin-left: -30px;
+    }
+    
+    .div-margin{
+        margin-left: 0px;
+    }
+    
 }

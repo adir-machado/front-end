@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   windowScrolled = false;
+  modal = false;
 
   ngOnInit() {
     localStorage.setItem("project", '1');
@@ -14,7 +15,6 @@ export class AppComponent implements OnInit {
       this.windowScrolled = window.pageYOffset > 200;
     });
   }
-  title = 'src';
 
   scrollToTop(){
     window.scroll({ 
@@ -22,5 +22,9 @@ export class AppComponent implements OnInit {
       left: 0, 
       behavior: 'smooth' 
     });
+  }
+
+  modalHandle(event: boolean) {
+    this.modal = event;
   }
 }

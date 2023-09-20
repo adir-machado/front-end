@@ -1,0 +1,55 @@
+.lawyer-desc{
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#3A161D;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #511e28;
+  }
+
+  .close{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .lawyer-name{
+    width: 450px;
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .desc{
+    margin-top: 0;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+  }
+  
+  .code{
+    font-family: 'Vollkorn', sans-serif;
+  }
