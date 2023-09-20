@@ -31,7 +31,7 @@
 body{
     font-family: 'Vollkorn', sans-serif;
     color: #3A161D;
-    background-color: #DDD7C2;
+    background-color: #CBC7BA;
     
     
 }
@@ -39,12 +39,12 @@ body{
     background-color: #FFFFFF;
 }
 
-/* body,
+body,
 html{
     width: 100%;
     height: 100%;
     margin:0;
-} */
+}
 
 a{
     all: unset;

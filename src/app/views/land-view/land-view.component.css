@@ -280,7 +280,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 5px){
+@media (max-width: 771px){
     .banner-img{
         display: none;
     }
