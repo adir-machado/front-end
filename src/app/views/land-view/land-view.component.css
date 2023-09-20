@@ -218,15 +218,22 @@
     font-size: 30px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1440px){
+    .section-fixer{
+        width: 85%;
+    }
 
-    .about{
-        display: none;
+    .expertise-fixer{
+        width: 63%;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 771px){
     .banner-img{
+        display: none;
+    }
+
+    .article-img{
         display: none;
     }
 
@@ -272,15 +279,15 @@
         padding: 80px 0px;
         flex-direction: column;
     }
+
+    .team-fixer{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+}
 }
 
-.team-fixer{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 5px){
+@media (max-width: 501px){
     .banner-img{
         display: none;
     }
