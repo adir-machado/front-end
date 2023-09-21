@@ -1,0 +1,48 @@
+@media (max-width: 1470px) {
+    .banner-title {
+        width: auto;
+    }
+@media ( max-width: 1082px) {
+    .location-detail {
+        width: auto;
+    }
+}
+@media ( max-width: 1029px) {
+    .expertise {
+        display: none;
+    }
+@media ( max-width: 973px) {
+    .location {
+        display: none;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text {
+        width: auto;
+    }
+    .banner-image {
+        width: auto;
+        padding-top: 31px;
+    }
+    .about {
+        padding: 0px 0px;
+    }
+    .button-banner {
+        cursor: pointer;
+        color: #F7F7F7;
+        border-radius: 10px;
+        background-color: #3A161D;
+        font-size: 19px;
+        padding: 11px 44px;
+        font-family: 'Poppins-Medium';
+        transition: .8s;
+        width: fit-content;
+    }
+    .banner {
+        padding: 151px 0px 24px 0px;
+    }
+    }
+}
+}

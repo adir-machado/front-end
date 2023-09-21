@@ -3,11 +3,9 @@
     display: flex;
     justify-content: space-between;
 }
-
 .mobile-banner{
     display: none;
 }
-
 .banner{
     /* justify-self: flex-start; */
     margin-top: 80px;
@@ -17,19 +15,16 @@
     width: 100%;
     height: fit-content;
 }
-
 .about-subtitle{
     width: 400px;
     margin-top: -5px;
     font-size: 40px;
 }
-
 .about-title{
     color: #925555;
     font-size: 20px;
     margin-bottom: 0;
 }
-
 .banner-text{
     max-width: 600px;
     width: 80%;
@@ -37,20 +32,17 @@
     font-size: 16px;
     font-family: 'Roboto';
 }
-
 .banner-fixer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
 }
-
 .banner-title{
     font-size: 33px;
     margin: 0;
     width: 705px;
 }
-
 .button-banner{
     all: unset;
     cursor: pointer;
@@ -63,21 +55,17 @@
     transition: .8s;
     width: fit-content;
 }
-
 .button-banner:hover{
     transform: scale(1.1);
 }
-
 .banner-img{
     width: 470px;
 }
-
 .img-banner{
     width:330px;
     z-index: 2;
     position: relative;
 }
-
 .img-bg{
     background-color: #3A161D;
     border-radius: 100px 100px 0px 0px;
@@ -87,13 +75,11 @@
     position: absolute;
     z-index: 1;
 }
-
 .expertise-fixer{
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-
 .about{
     width: 100%;
     background-color: white;
@@ -118,25 +104,20 @@
     background-color: #3A161D;
     color: #FFFFFF;
 }
-
 .img-container{
     max-width: 345px;
     max-height: 480px;
     position: absolute;
-
 }
-
 .mobile-about{
     display: none;
 }
-
 .expertise{
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 80px 0px;
 }
-
 .team{
     width: 100%;
     background-color: white;
@@ -144,7 +125,6 @@
     justify-content: center;
     padding: 80px 0px;
 }
-
 .team-button{
     all: unset;
     border: 2px solid #3A161D;
@@ -161,16 +141,13 @@
     background-color: #3A161D;
     color: #FFFFFF;
 }
-
 .div-margin{
     margin-left: 20px;
 }
-
 .team-title{
     max-width: 315px;
     font-size: 40px;
 }
-
 .articles{
     width: 100%;
     display: flex;
@@ -185,46 +162,38 @@
 .article:hover{
     transform: scale(1.05);
 }
-
 .image-portrait{
     width: 519.950px;
     height: 346.638px;
     background-color: #3A161D;
     margin: -15px 0px 0px 15px;
 }
-
 .expertise-block{
     transition: .8s;
 }
-
 .expertise-block:hover{
     transform: scale(1.05);
 }
-
 .expertise-title{
     width: 315px;
     font-size: 40px;
     width: 340px;
 }
-
 .margin{
     margin-left: 30px;
 }
-
 .expertise-p {
     float: right;
     font-size: 19px;
     font-family: Vollkorn;
     cursor: pointer;
 }
-
 .expertise-p {
     float: right;
     font-size: 19px;
     font-family: Vollkorn;
     cursor: pointer;
 }
-
 .m-about-image{
     z-index: 2;
     width: 100%;
@@ -233,237 +202,7 @@
     box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
     margin-left: -50px
 }
-
 .about-img{
     margin-left: 100px;
     display: flex;
-}
-
-.m-about-title{
-    width: 400px;
-    margin-top: -5px;
-    font-size: 30px;
-}
-
-@media (max-width: 1440px){
-    .section-fixer{
-        width: 85%;
-    }
-
-    .expertise-fixer{
-        width: 63%;
-    }
-}
-
-@media (max-width: 771px){
-    .banner-img{
-        display: none;
-    }
-
-    .article-img{
-        display: none;
-    }
-
-    .banner{
-        display: none;
-    }
-
-    .mobile-banner{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 80px;
-    }
-
-    .banner-mobile-img{
-        display: block;
-        width: 100%;
-        height: 300px;
-        background-image: url(../../../assets/images/banner-mobile.png);
-        background-size:cover;
-        background-position: center;
-        border-radius: 0px 0px 25px 25px;
-        margin-top: -20px;
-        z-index: -1;
-    }
-
-    .about{
-        display: none;
-    }
-
-    .about-button{
-        margin-bottom: 40px;
-    }
-
-    .mobile-about{
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px 0px;
-        flex-direction: column;
-    }
-
-    .team-fixer{
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 700px){
-    .banner-img{
-        display: none;
-    }
-
-    .team-fixer{
-        width: 75%;
-    }
-
-    .m-about-image{
-        width: 400px;
-        margin-left: -100px;
-    }
-
-    .mobile-banner{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 80px;
-    }
-
-    .expertise-fixer{
-        width: 80%;
-    }
-
-    .banner{
-        display: none;
-    }
-
-    .banner-text{
-        width: 90%;
-        text-align: justify;
-        font-size: 16px;
-        font-family: 'Roboto';
-    }
-
-    .banner-mobile-img{
-        display: block;
-        width: 100%;
-        height: 300px;
-        background-image: url(../../../assets/images/banner-mobile.png);
-        background-size:cover;
-        background-position: center;
-        border-radius: 0px 0px 25px 25px;
-        margin-top: -20px;
-        z-index: -1;
-    }
-
-    .banner-title{
-        display: none;
-    }
-
-    .about{
-        display: none;
-    }
-
-    .about-button{
-        margin-bottom: 40px;
-    }
-
-    .mobile-about{
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px 0px;
-        flex-direction: column;
-    }
-
-    .expertise{
-        margin-left: -10px;
-    }
-
-    .article-img{
-        display: none;
-    }
-
-    .articles{
-        border-top: #3A161D solid 5px;
-    }
-
-    .expertise-block:hover{
-        transform: none;
-    }
-
-    .expertise-title{
-        font-size: 30px;
-    }
-
-    .article{
-        border-bottom: solid 5px #3A161D;
-    }
-
-    .article-title{
-        max-width: 315px;
-        font-size: 28px;
-    }
-
-    .div-margin{
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 1046px) {
-    .expertise-p {
-        display: none;
-    }
-}
-
-@media (max-width:421px){
-    .m-about-image{
-        width: 350px;
-    }
-}
-
-@media (max-width: 380px){
-    .expertise-fixer{
-        width: 90%;
-    }
-
-    .m-about-image{
-        width: 300px;
-    }
-    
-    .m-about-title{
-        max-width: 80%;
-        font-size: 26px;
-    }
-
-    .team-title{
-        font-size: 30px;
-    }
-
-    .div-margin{
-        margin-left: 20px;
-    }
-
-}
-
-@media (max-width: 321px){
-    
-    .team-fixer{
-        margin-left: -30px;
-    }
-    
-    .div-margin{
-        margin-left: 0px;
-    }
-    
 }

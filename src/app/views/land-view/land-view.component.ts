@@ -3,7 +3,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-land-view',
   templateUrl: './land-view.component.html',
-  styleUrls: ['./land-view.component.css']
+  styleUrls: ['./land-view.component.css', './land-view-mobile.component.css']
 })
 export class LandViewComponent {
 

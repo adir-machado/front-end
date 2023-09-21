@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about-view',
   templateUrl: './about-view.component.html',
-  styleUrls: ['./about-view.component.css']
+  styleUrls: ['./about-view.component.css','./about-view-mobile.component.css']
 })
 export class AboutViewComponent {
   expertises = [
