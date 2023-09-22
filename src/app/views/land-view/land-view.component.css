@@ -65,13 +65,14 @@
     width:330px;
     z-index: 2;
     position: relative;
+    margin-bottom: 1.75px;
 }
 .img-bg{
     background-color: #3A161D;
     border-radius: 100px 100px 0px 0px;
-    width: 160px;
+    width: 198px;
     height: 342px;
-    margin: 114px 0px 0px 70px;
+    margin: 153px 0px 0px 65px;
     position: absolute;
     z-index: 1;
 }
