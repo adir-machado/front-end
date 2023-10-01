@@ -1,8 +1,8 @@
 <div style="display: flex; justify-content: space-between; width: 100%;" (click)="openLink()">
     <div class="logo-wrapper">
-        <img class="logo" src="../../../assets/images/CJ_logo.png" alt="Logo do site Consultor Jurídico">
+        <img class="logo" [src]="path" alt="Logo do site Consultor Jurídico">
     </div>
-    <img class="mobile-logo" src="../../../assets/images/CJ_logo.png" alt="Logo do site Consultor Jurídico">
+    <img class="mobile-logo" [src]="path" alt="Logo do site Consultor Jurídico">
     <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
         <h1 class="title">{{ title }}</h1>
         <p class="name">Por {{ name }}</p>

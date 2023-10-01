@@ -1,0 +1,11 @@
+<section class="team-wrapper">
+    <div *ngFor="let lawyer of lawyers" class="expertise-item">
+        
+        <img src="{{lawyer.path}}" class="expertise-image">
+        <div>
+            <h1 class="expertise-title" style="margin: 0;">{{lawyer.name}}</h1>
+            <h1 class="expertise-text" style="font: 20px; margin: 0;">{{lawyer.title}}</h1>
+            <p class="expertise-text">{{lawyer.desc}}</p>
+        </div>
+    </div>
+</section>

@@ -24,8 +24,8 @@ export class LandViewComponent {
     { id: '2', name: "Dr. Fellipe Moura de Britto", title: "Advogado", path: "../../../assets/images/img_9813.jpg" },
   ];
   articles = [
-    { title: "O necessário overruling sobre o artigo 55 da Lei 9.099/95", author: "Adir Machado Bandeira", link: "https://www.conjur.com.br/2023-mai-16/adir-machado-overruling-artigo-55-lei-9099952" },
-    { title: "A advocacia e o processo de impeachmentA (in)efetividade dos arts. 23 e 24, § 1º do Estatuto da Advocacia - Honorários advocatícios sucumbenciais no limbo", author: "Adir Machado Bandeira", link: "https://jus.com.br/artigos/104140/a-in-efetividade-dos-arts-23-e-24-1-do-estatuto-da-advocacia-honorarios-advocaticios-sucumbenciais-no-limbo" },
+    { title: "O necessário overruling sobre o artigo 55 da Lei 9.099/95", author: "Adir Machado Bandeira", link: "https://www.conjur.com.br/2023-mai-16/adir-machado-overruling-artigo-55-lei-9099952", path: "../../../assets/images/CJ_logo.png" },
+    { title: "A (in)efetividade dos arts. 23 e 24, § 1º do Estatuto da Advocacia - Honorários advocatícios sucumbenciais no limbo", author: "Adir Machado Bandeira", link: "https://jus.com.br/artigos/104140/a-in-efetividade-dos-arts-23-e-24-1-do-estatuto-da-advocacia-honorarios-advocaticios-sucumbenciais-no-limbo", path: "../../../assets/images/Group 23.svg" },
   ];
 
 

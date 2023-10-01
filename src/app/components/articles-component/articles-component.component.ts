@@ -9,6 +9,7 @@ export class ArticlesComponentComponent {
   @Input('articleTitle') title = '';
   @Input('authorName') name = '';
   @Input('articleLink') link = '';
+  @Input('imagePath') path = '';
 
   openLink(){
     window.open(this.link, '_blank')?.focus()

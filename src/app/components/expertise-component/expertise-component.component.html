@@ -1,8 +1,8 @@
 <div style="display: flex; justify-content: center;">
-    <img [src]="this.path" style="margin-right: 20px;">
+    <img [src]="this.path" style="margin-right: 20px; max-height: 200px;">
     <div style="display: flex; flex-direction: column;">
         <h1 style="margin: 0; font-size: 40px;"> {{ title }} </h1>
-        <p style="margin: 0; font-size: 20px; text-align: justify; width: 800px;"> {{ description }} </p>
+        <p style="margin: 0; font-size: 20px; text-align: justify; width: 800px; white-space: pre-wrap;"> {{ description }} </p>
     </div>
 
 </div>

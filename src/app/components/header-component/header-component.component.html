@@ -1,14 +1,16 @@
-<nav [class]="about.isActive ? 'gray-navbar' : 'navbar'">
+<nav [class]="about.isActive || areas.isActive || team.isActive ? 'gray-navbar' : 'navbar'">
     <div style="display: flex; justify-content: space-between; width: 100%;">
         <img routerLink="/" class="logo" src="../../../assets/images/logo-AM.png" alt="Logo de Adir Machado">
         <img *ngIf="openMenu == false" style="width: 60px;" (click)="openMenu = true" class="hamburger" src="../../../assets/images/hamburger.png" alt="">
         <img *ngIf="openMenu == true" width="60" (click)="openMenu = false" class="hamburger" src="../../../assets/images/cross.png" alt="">
     </div>
     <div class="link-wrapper">
-        <p routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>INÍCIO</strong></p>
-        <p (click)="scrollToId('articles')" routerLink="/" [class]="about.isActive ? 'gray-link' : 'link'"><strong>ARTIGOS</strong></p>
-        <p routerLink="/sobre" routerLinkActive="active-link" #about="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>SOBRE</strong></p>
-        <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive ? 'gray-link' : 'link'"><strong>CONTATO</strong></p>
+        <p routerLink="/" [class]="about.isActive || areas.isActive || team.isActive ? 'gray-link' : 'link'" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><strong>INÍCIO</strong></p>
+        <p (click)="scrollToId('articles')" routerLink="/" [class]="about.isActive || areas.isActive || team.isActive? 'gray-link' : 'link'"><strong>ARTIGOS</strong></p>
+        <p routerLink="/sobre" routerLinkActive="active-link" #about="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive || areas.isActive || team.isActive ? 'gray-link' : 'link'"><strong>SOBRE</strong></p>
+        <p routerLink="/contato" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" [class]="about.isActive || areas.isActive || team.isActive ? 'gray-link' : 'link'"><strong>CONTATO</strong></p>
+        <p routerLink="/areas" routerLinkActive="active-link" #areas="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" style="display: none;"><strong>AREAS DE ATUAÇÃO</strong></p>
+        <p routerLink="/equipe" routerLinkActive="active-link" #team="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" style="display: none;"><strong>NOSSA EQUIPE</strong></p>
     </div>
     <div *ngIf="openMenu == true" class="menu">
         <div style="border-bottom: 3px; border: solid #BF9257; margin-top: -3px; margin-bottom: 10px;width: 30%; border-radius: 5px;"></div>

@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AreasActivityComponent } from './views/areas-activity/areas-activity.component';
 import { TeamModalComponent } from './components/team-modal/team-modal.component';
 import { TeamComponentModalComponent } from './components/team-component-modal/team-component-modal.component';
+import { TeamViewComponent } from './views/team-view/team-view.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TeamComponentModalComponent } from './components/team-component-modal/t
     FooterComponent,
     TeamModalComponent,
     TeamComponentModalComponent,
+    TeamViewComponent,
   ],
   imports: [
     BrowserModule,
